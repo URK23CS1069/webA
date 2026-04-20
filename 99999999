@@ -1,0 +1,24 @@
+Clone a GitHub repository, modify a file and push the changes back to the repository.
+Git GitHub
+
+
+Step 1 – Clone
+
+bashcopy
+git clone https://github.com/<username>/<repo-name>.git
+cd <repo-name>
+
+Step 2 – Modify a file
+
+bashcopy
+echo "Updated content" >> README.md
+cat README.md
+git diff
+
+Step 3 – Commit & push
+
+bashcopy
+git add README.md
+git commit -m "docs: update README with new content"
+git push origin main
+git log --oneline -3
